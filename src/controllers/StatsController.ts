@@ -18,7 +18,6 @@ export const getAll: Handler = async (req, res) => {
     count,
     results
   })
-  console.log('ALO?')
 }
 
 export const generateFromOrderEvent = async (order: any) => {
