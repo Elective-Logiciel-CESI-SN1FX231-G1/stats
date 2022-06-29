@@ -6,5 +6,6 @@ import StatsRouter from './routes/StatsRouter'
 const app = express()
 
 app.use(auth)
+app.use('/api', express.static('apidoc'))
 app.use('/api/stats', StatsRouter)
 export default app
