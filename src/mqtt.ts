@@ -7,7 +7,6 @@ const client = mqtt.connect(config.get('mqtt.url'))
 client.on('message', async function (topic, message) {
   try {
     const msg = JSON.parse(message.toString())
-    console.log(msg)
     if (topic === 'shop/orders') await generateFromOrderEvent(msg)
   } catch (error) {
     console.error(error)
