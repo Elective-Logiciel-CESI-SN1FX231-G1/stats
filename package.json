@@ -1,23 +1,25 @@
 {
-  "name": "orders",
+  "name": "stats",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
   "scripts": {
     "dev": "nodemon --exec ts-node src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "build-doc": "apidoc -i src -o apidoc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Elective-Logiciel-CESI-SN1FX231-G1/orders.git"
+    "url": "git+https://github.com/Elective-Logiciel-CESI-SN1FX231-G1/stats.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Elective-Logiciel-CESI-SN1FX231-G1/orders/issues"
+    "url": "https://github.com/Elective-Logiciel-CESI-SN1FX231-G1/stats/issues"
   },
-  "homepage": "https://github.com/Elective-Logiciel-CESI-SN1FX231-G1/orders#readme",
+  "homepage": "https://github.com/Elective-Logiciel-CESI-SN1FX231-G1/stats#readme",
   "dependencies": {
+    "apidoc": "^0.51.1",
     "async-mqtt": "^2.6.2",
     "axios": "^0.27.2",
     "config": "^3.3.7",
